@@ -1,7 +1,7 @@
 ## importing and creating sequence and response
 install.packages("R.matlab")
 library(R.matlab)
-path<-"~/Downloads/NIPS2008_train_data_matlab"
+path<-"% enter folder path here %"
 pathname<-file.path(path,"elegans_size=25000_subsample=0.mat")
 eleg_sub<-readMat(pathname)
 resp<-eleg_sub$LT
