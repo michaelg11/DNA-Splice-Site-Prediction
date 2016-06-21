@@ -13,4 +13,4 @@ hinder study of gene splicing, such as lack of labeled data which can be used to
 The work was inspired from the following paper-
 Herndon, N., & Caragea, D. (2016). A Study of Domain Adaptation Classifiers Derived From Logistic Regression for the Task of Splice Site Prediction. IEEE transactions on nanobioscience, 15(2), 75-83.
 
-Our work is in the process of being published, as we are still working on compiling the reports and the resutls, and improving on some of them. 
+Our work is in the process of being published, as we are still working on compiling the reports and the resutls, and improving on some of them. The FINAL.pdf is the current version of our work.
