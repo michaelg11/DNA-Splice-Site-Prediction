@@ -24,6 +24,12 @@ testpred[test.res>0.5]="1"
 table(testpred,test[,757])
 roc(yt,test.res,plot=T)
 
+sn<-subset(test.res[,2],y_test=='-1')
+sp<-subset(test.res[,2],y_test=='1')
+prf<-pr.curve(sp,sn,curve = T)
+plot(prf)
+
+
 #one class SVM
 library(e1071)
 df=subset(train,response=="1")
@@ -39,3 +45,10 @@ mean(svm.pred!=Test.impensData$V2)
 roc(Test$V2,svm.probs,plot = T)
 
 model<-svm(x=dx,y=dy,cross=3,probability=T)
+
+sn<-subset(svm.probs[,2],y_test=='-1')
+sp<-subset(svm.probs[,2],y_test=='1')
+prf<-pr.curve(sp,sn,curve = T)
+plot(prf)
+
+
